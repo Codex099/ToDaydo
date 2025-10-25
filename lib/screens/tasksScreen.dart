@@ -1,17 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:todaydo/models/task.dart';
+import 'package:todaydo/models/task.data.dart';
 import 'package:todaydo/screens/add_tasks.dart';
 import 'package:todaydo/widget/TaskList.dart';
+import 'package:provider/provider.dart';
 
-class Tasksscreen extends StatefulWidget {
+class Tasksscreen extends StatelessWidget {
   const Tasksscreen({super.key});
-
-  @override
-  State<Tasksscreen> createState() => _TasksscreenState();
-}
-
-class _TasksscreenState extends State<Tasksscreen> {
-  List<Task> Tasks = [Task(name: "1.2.3"), Task(name: "4.5.6")];
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +18,12 @@ class _TasksscreenState extends State<Tasksscreen> {
             isScrollControlled: true,
             builder:
                 (context) => SingleChildScrollView(
-                  child: Container(padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),child: AddTasksScreen()),
+                  child: Container(
+                    padding: EdgeInsets.only(
+                      bottom: MediaQuery.of(context).viewInsets.bottom,
+                    ),
+                    child: AddTasksScreen(),
+                  ),
                 ),
           );
         },
@@ -53,7 +52,7 @@ class _TasksscreenState extends State<Tasksscreen> {
               ],
             ),
             Text(
-              '4 task ',
+              '${Provider.of<TaskData>(context).Tasks.length} Tasks ',
               style: TextStyle(fontSize: 18, color: Colors.white),
             ),
             SizedBox(height: 20),
@@ -63,7 +62,7 @@ class _TasksscreenState extends State<Tasksscreen> {
                   color: Colors.white,
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                 ),
-                child: task_list(Tasks),
+                child: task_list(),
               ),
             ),
           ],
