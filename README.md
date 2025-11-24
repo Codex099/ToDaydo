@@ -1,1 +1,1 @@
-TodayDo est une application de to-do list simple et intuitive conçue pour t’aider à organiser efficacement ta journée. Ajoute, classe et complète tes tâches en quelques secondes grâce à une interface fluide et moderne. Avec sa synchronisation rapide et ses rappels pratiques, TodayDo t’accompagne pour rester productif au quotidien.
+
