@@ -1,16 +1,1 @@
-# todaydo
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+TodayDo est une application de to-do list simple et intuitive conçue pour t’aider à organiser efficacement ta journée. Ajoute, classe et complète tes tâches en quelques secondes grâce à une interface fluide et moderne. Avec sa synchronisation rapide et ses rappels pratiques, TodayDo t’accompagne pour rester productif au quotidien.
